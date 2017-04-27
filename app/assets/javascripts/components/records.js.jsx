@@ -60,7 +60,7 @@ class Records extends BaseComponent {
         return (
             <div className="container">
                 <div className="records">
-                    <h2 className="title"> Records </h2>
+                    <h2 className="title"> My Expense Tracker </h2>
                     <div className="row">
                         <AmountBox type="success" amount={this.debits()} text="Credit"/>
                         <AmountBox type="danger" amount={this.credits()} text="Debit"/>

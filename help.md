@@ -40,7 +40,7 @@ rails g react:install
 ```
 
 ## Creating the Record Resource
-We are going to build a Record resource, which will include a `date`, a `title`, and an `amount`. Instead of using the `scaffold` generator, we are going to use the `resource` generator, as we are not going to be using all of the files and methods created by the scaffoldgenerator. 
+We are going to build a Record resource, which will include a `date`, a `title`, and an `amount`. Instead of using the `scaffold` generator, we are going to use the `resource` generator, as we are not going to be using all of the files and methods created by the scaffold generator. 
 
 ```bash
 rails g resource Record title date:date amount:float

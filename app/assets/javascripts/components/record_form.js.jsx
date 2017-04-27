@@ -38,7 +38,7 @@ class RecordForm extends BaseComponent {
             <div className="container">
                 <form className="form-inline" onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Date"
+                        <input type="text" className="form-control" placeholder="Date" data-provide='datepicker'
                             name="date" value={this.state.date} onChange={this.handleChange} />
                     </div>
                     <div className="form-group">
