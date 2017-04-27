@@ -22,11 +22,8 @@ class RecordForm extends BaseComponent {
     }
 
     handleDateChange(event) {
-        var name = event.target.name;
-        var obj = {};
-        obj[""+name] = event.target.value;
         // setState() updates the component's state and schedules a UI verification/refresh based on the new state
-        this.setState(obj);
+        this.setState(event.target.value);
     }
 
     valid() {
@@ -47,7 +44,7 @@ class RecordForm extends BaseComponent {
                 <form className="form-inline" onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Date" data-provide='datepicker'
-                            name="date" value={this.state.date} onChange={this.handleDateChange} />
+                            name="date" value={this.state.date} selected={this.state.date} onChange={this.handleDateChange} />
                     </div>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Title"
